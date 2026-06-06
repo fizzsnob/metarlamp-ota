@@ -11,9 +11,9 @@ built-in `FW_VERSION`—downloads and installs the signed image at `url`
   `https://raw.githubusercontent.com/fizzsnob/metarlamp-ota/main/firmware.json`.
 - **`firmware.img`** — the signed firmware image (uploaded when you cut a release).
 
-Currently `version` is `5` (the N-Number build). A lamp running an older
+Currently `version` is `6` (the N-Number build). A lamp running an older
 `FW_VERSION` will pull, verify, and install this signed image; a lamp already on
-v5 reports "up to date."
+v6 reports "up to date."
 
 ## Publishing an update
 1. In the sketch, bump `#define FW_VERSION` (e.g. 1 → 2) and **Export Compiled Binary** in the Arduino IDE.

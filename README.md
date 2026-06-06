@@ -13,7 +13,7 @@ built-in `FW_VERSION`—downloads and installs the signed image at `url`
 
 Currently `version` is `4` (the N-Number build). A lamp running an older
 `FW_VERSION` will pull, verify, and install this signed image; a lamp already on
-v3 reports "up to date."
+v4 reports "up to date."
 
 ## Publishing an update
 1. In the sketch, bump `#define FW_VERSION` (e.g. 1 → 2) and **Export Compiled Binary** in the Arduino IDE.

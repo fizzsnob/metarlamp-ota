@@ -11,7 +11,7 @@ built-in `FW_VERSION`—downloads and installs the signed image at `url`
   `https://raw.githubusercontent.com/fizzsnob/metarlamp-ota/main/firmware.json`.
 - **`firmware.img`** — the signed firmware image (uploaded when you cut a release).
 
-Currently `version` is `3` (the N-Number build). A lamp running an older
+Currently `version` is `4` (the N-Number build). A lamp running an older
 `FW_VERSION` will pull, verify, and install this signed image; a lamp already on
 v3 reports "up to date."
 

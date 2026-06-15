@@ -1,5 +1,5 @@
 {
   "type": "metar-lamp",
-  "version": 57,
+  "version": 58,
   "url": "https://raw.githubusercontent.com/fizzsnob/metarlamp-ota/main/firmware.img"
 }

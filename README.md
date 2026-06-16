@@ -6,20 +6,9 @@ firmware. The lamp periodically fetches `firmware.json` over HTTPS, and—if its
 installs the signed image at `url` (RSA-4096 signature verified on-device
 against the key baked into the firmware).
 
-> ## ⚠️ CURRENTLY PUBLISHED: v9079 — SPECIAL ONE-OFF TABBED-UI TRIAL (not production)
->
-> The image on this channel right now is a **one-off trial build of the new
-> tabbed web setup UI** (built from the `tabbed-setup-ui` branch of the code
-> repo). It is versioned **9079** specifically to flag it as a test — it is NOT
-> part of the production 78 / 79 / … sequence. Published 2026-06-16 so a lamp can
-> try the tabbed interface over the air.
->
-> **The production line is v79.** To restore the production channel, revert
-> `firmware.img` + `firmware.json` to commit `3385f40` (the v79 release), or
-> republish a non-tabbed build from the code repo's `fw-v79` tag / mainline.
->
-> **Going forward, every normal OTA push must be the NON-tabbed mainline build —
-> not this tabbed trial.**
+Currently `version` is **100** — the build with the new **tabbed web setup UI**,
+which is now the mainline. A lamp on an older `FW_VERSION` pulls, verifies, and
+installs this signed image; a lamp already on v100 reports "up to date."
 
 ## Files
 - **`firmware.json`** — the manifest the lamp polls. Served at

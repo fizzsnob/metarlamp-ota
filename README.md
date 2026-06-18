@@ -6,7 +6,7 @@ firmware. The lamp periodically fetches `firmware.json` over HTTPS, and—if its
 installs the signed image at `url` (RSA-4096 signature verified on-device
 against the key baked into the firmware).
 
-Currently `version` is **101** — the build with the new **tabbed web setup UI**,
+Currently `version` is **102** — the build with the new **tabbed web setup UI**,
 which is now the mainline. A lamp on an older `FW_VERSION` pulls, verifies, and
 installs this signed image; a lamp already on v100 reports "up to date."
 
